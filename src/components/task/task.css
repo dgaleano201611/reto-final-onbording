@@ -55,6 +55,8 @@
 
 .isDone {
 	background-color: #03c9878d;
+	border: none;
+	border-radius: 5px;
 }
 
 .button-check--isDone {
