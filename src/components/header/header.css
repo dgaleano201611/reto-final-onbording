@@ -1,0 +1,15 @@
+.header {
+	width: 100%;
+	background-color: #f7f7f7;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+	color: rgb(107, 105, 105);
+	border-bottom: solid 1px #ccc;
+}
+
+.header__paragraph {
+	display: flex;
+	padding-left: 10px;
+}

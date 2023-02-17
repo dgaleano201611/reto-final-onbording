@@ -1,0 +1,13 @@
+.target {
+	border: solid 1px #ccc;
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 2rem;
+}

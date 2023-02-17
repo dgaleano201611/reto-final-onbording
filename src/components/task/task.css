@@ -1,0 +1,74 @@
+.task {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	padding: 1rem 0.5rem;
+}
+
+.task-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+.task__id,
+.task__paragraph {
+	color: #6c6c6c;
+	font-size: 14px;
+}
+
+.background-gray {
+	color: #ccc;
+}
+
+.background-white {
+	color: white;
+}
+
+.buttons-container {
+	border-radius: 10px;
+}
+
+.button-check,
+.button-edit,
+.button-delete {
+	padding: 0.5rem 0.8rem;
+	border: none;
+}
+
+.button-check {
+	background-color: #73777b;
+	border-radius: 10px 0 0 10px;
+}
+
+.button-edit {
+	background-color: #0dcaf0;
+}
+
+.button-delete {
+	background-color: #dc3545;
+	border-radius: 0 10px 10px 0;
+}
+
+.isDone {
+	background-color: #03c9878d;
+}
+
+.button-check--isDone {
+	background-color: #21945e;
+}
+
+.inputEdit {
+	padding: 0.2rem;
+}
+
+@media screen and (min-width: 375px) {
+	.button-check,
+	.button-edit,
+	.button-delete {
+		cursor: pointer;
+	}
+}
