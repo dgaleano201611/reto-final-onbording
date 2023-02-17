@@ -17,16 +17,19 @@ function TaskContainer() {
 	}, []);
 
 	const deleteTask = (id) => {
-		taskService.deleteTask(id).then(
-			(res) =>
-				res.status &&
-				swal({
-					text: 'Task Deleted succesfully',
-					icon: 'success',
-				})
-		);
-		const newTaskList = tasks.filter((e) => e.id !== id);
-		setTasks(newTaskList);
+		swal({
+			title: 'Are you sure?',
+			text: '¿Do you want to delete this task?',
+			icon: 'warning',
+			buttons: ['No, take me back!', 'Yes, delete it'],
+			dangerMode: true,
+		}).then((isConfirm) => {
+			if (isConfirm) {
+				taskService.deleteTask(id);
+				const newTaskList = tasks.filter((e) => e.id !== id);
+				setTasks(newTaskList);
+			}
+		});
 	};
 
 	const createTask = (task) => {

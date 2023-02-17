@@ -48,8 +48,7 @@ export const taskService = {
 	},
 
 	/**
-	 *
-	 * @param {{task:string, id: number}} param0
+	 * @param {{task:string, id: number, isDone: boolean}} task
 	 * @returns
 	 */
 	putTask: async (task) => {
@@ -69,7 +68,6 @@ export const taskService = {
 	},
 
 	/**
-	 *
 	 * @param {number} id
 	 * @returns
 	 */

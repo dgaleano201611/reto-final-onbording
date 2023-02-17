@@ -15,7 +15,13 @@ function Input({ text, handlerCreate }) {
 
 	return (
 		<form className='form' onSubmit={handlerSubmitter}>
-			<input type='text' className='form__input' name='task' />
+			<input
+				type='text'
+				className='form__input'
+				name='task'
+				placeholder='Ingresa tu tarea'
+				autoComplete='off'
+			/>
 			<button type='submit' className='button'>
 				<span className='button__plus'>{<FaPlus />}</span>
 				{text}
